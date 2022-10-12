@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="<%=basePath%>">
+
+        <title>Login page</title>
+
+        <meta content="no-cache" http-equiv="pragma">
+        <meta content="no-cache" http-equiv="cache-control">
+        <meta content="0" http-equiv="expires">
+        <meta content="keyword1,keyword2,keyword3" http-equiv="keywords">
+        <meta content="This is my page" http-equiv="description">
+        <link href="loginStyle.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body class="img_1">
+        <div class="loginPanel">
+            <div id="title">
+                <h1>Welcome to Smart Homing System!</h1>
+                <h2 style="text-align: center;margin-bottom: 0">Please Log in</h2></div>
+            <form action="./login" method="post">
+                <div class="login">
+                    <label>
+                        <input class="input" name="username" placeholder="Username" type="text"
+                               value="<%=lastusername %>"/>
+                    </label>
+                    <label>
+                        <input class="input" name="password" placeholder="Password" type="text"/>
+                    </label>
+                </div>
+                <div class="loginCheck">
+                    <span style="color: red;font-size: small"><%=message %></span>
+                    <input class="button" name="submit" type="SUBMIT" value="Login">
+                </div>
+            </form>
+            <div class="changeAndReg">
+                <a href="./changepassword.jsp" style="text-decoration: none">Change password.</a>
+                <br>
+                <a href="./signIn.jsp" style="text-decoration: none">Don't have an account? Sign in.</a>
+            </div>
+        </div>
+    </body>
+</html>

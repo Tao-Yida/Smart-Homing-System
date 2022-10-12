@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/html">
+    <head>
+        <base href = "<%=basePath%>">
+
+        <title>Main page</title>
+
+        <meta content = "no-cache" http-equiv = "pragma">
+        <meta content = "no-cache" http-equiv = "cache-control">
+        <meta content = "0" http-equiv = "expires">
+        <meta content = "keyword1,keyword2,keyword3" http-equiv = "keywords">
+        <meta content = "This is my page" http-equiv = "description">
+        <META CONTENT = “120;URL=http://www.baidu.com” HTTP-EQUIV = “Refresh”>
+        <link href = "loginStyle.css" rel = "stylesheet" type = "text/css">
+
+    </head>
+    <script>
+
+        let height1;
+        let height2;
+        window.onload = function () {
+            const h1 = document.documentElement.clientHeight;
+            const h2 = document.documentElement.clientHeight;
+            height1 = document.getElementById("height1");
+            height2 = document.getElementById("height2")
+            height1.style.height = h1 - 5 + "px";
+            height2.style.height = h2 - 5 + "px";
+
+        }
+    </script>
+    <body>
+        <div class = "lefttoright">
+            <div class = "userPanel" id = "height1">
+                <%
+                String username = (String) session.getAttribute("username");
+                %>
+                <h1 class = "userTitle">Welcome<br><%=username%></h1>
+                <h2 class = "userSubTitle">~Home page of smart home system~</h2>
+                <h3 class = "userSubTitle">
+                    Total amount of devices : <%=size%>.
+                </h3>
+                <form action = "./showequ" method = "post">
+                    <input id = "refresh" name = "submit" type = "SUBMIT" value = "Refresh">
+                </form>
+                <br>
+                <div>
+                    <div>
+                        <h3 class = "userSubTtile">
+                            <form action = "./search" method = "post">
+                                <input class = "input"
+                                       name = "d_name"
+                                       style = "margin-top:60px; height:50px; margin-bottom:20px"
+                                       type = "text"> <input name = "flag"
+                                                             type = "hidden" value = "0"> <input
+                                    class = "search"
+                                    name = "submit" style = "width:200px" type = "SUBMIT" value = "Search by name">
+                            </form>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3 class = "userSubTitle">
+                            <form action = "./search" method = "post">
+                                <input name = "type" type = "radio" value = "Light"> Light
+                                &nbsp; <input name = "type" type = "radio" value = "Door"> Door
+                                &nbsp; <input name = "type" type = "radio" value = "Window">
+                                Window &nbsp; <input name = "flag" type = "hidden" value = "1">
+                                <input class = "search" name = "submit"
+                                       style = "margin-top:15px; width:200px" type = "SUBMIT"
+                                       value = "Search by type">
+                            </form>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class = "mainFrame" id = "height2">
+                <!--
+                <form action="./showequ" id="show" method="post">
+                    <script language="JavaScript">
+                        setInterval("show.submit();", 60000);
+                    </script>
+                </form>
+                -->
+                <div class = "family">
+                    <h3 style = "margin-top:20px;font-size: 30px;text-align: center">
+                        Family :
+                        <%=f_name%></h3>
+                    <div class = "status">
+                        <div class = "column1">
+                            <span>Humidity : <%=hu%></span>
+                        </div>
+                        <div class = "column2">
+                            <span>Temperature : <%=tm%></span>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br>
+
+                <div class = "device-light">
+                    <img alt = "" class = "icon" src = "light.png">
+                    <div class = "information">
+                        <span>&nbsp;Name : <%=d_name%></span><br>
+                        <span>&nbsp;Bright : <%=bright%></span><br>
+                        <span>Information : <%=information%></span><br>
+                        <span>ON/OFF : <%=l_state%></span>
+                    </div>
+                </div>
+
+
+                <div class = "device-door">
+                    <img alt = "" class = "icon" src = "door.png">
+                    <div class = "information">
+                        <span>&nbsp;Name : <%=d_name%></span><br>
+                        <span>&nbsp;Information : <%=information%></span><br>
+                        <span>OPEN/CLOSE : <%=d_state%></span>
+                    </div>
+                </div>
+
+                <div class = "device-window">
+                    <img alt = "" class = "icon" src = "window.png">
+                    <div class = "information">
+                        <span>&nbsp;Name : <%=d_name%></span><br>
+                        <span>&nbsp;Information : <%=information%></span><br>
+                        <span>OPEN/CLOSE : <%=w_state%></span>
+                    </div>
+                </div>
+
+                <div class = "device-alarm">
+                    <img alt = "" class = "icon" src = "alarm.png">
+                    <div class = "information">
+                        <span>&nbsp;Name : <%=d_name%></span><br>
+                        <span>&nbsp;Information : <%=information%></span><br>
+                        <span>OPEN/CLOSE : <%=w_state%>
+					</span>
+                    </div>
+                </div>
+                <div class = "device-sound">
+                    <img alt = "" class = "icon" src = "sound.png">
+                    <div class = "information">
+                        <span>&nbsp;Name : <%=d_name%></span><br>
+                        <span>&nbsp;Information : <%=information%></span><br>
+                        <span>OPEN/CLOSE : <%=w_state%></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "copyright">
+            <span>Copyright @2021. Team33 All Rights Reserved</span>
+        </div>
+    </body>
+</html>

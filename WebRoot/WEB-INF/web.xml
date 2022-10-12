@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  
+  <session-config>
+    <session-timeout>3600</session-timeout>
+  </session-config>
+  
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>PasswordServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.PasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ShowServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.ShowServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>SignInServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.SignInServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>LightServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.LightServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DoorServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.DoorServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>WindowServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.WindowServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>SearchServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.AddServlet</servlet-class>
+  </servlet>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>PasswordServlet</servlet-name>
+  	<url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ShowServlet</servlet-name>
+  	<url-pattern>/showequ</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SignInServlet</servlet-name>
+  	<url-pattern>/signIn</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>LightServlet</servlet-name>
+  	<url-pattern>/light</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DoorServlet</servlet-name>
+  	<url-pattern>/door</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>WindowServlet</servlet-name>
+  	<url-pattern>/window</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SearchServlet</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddServlet</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

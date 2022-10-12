@@ -1,0 +1,496 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img_1 {
+    background-image: url("r-architecture-T6d96Qrb5MY-unsplash-1.jpg");
+    background-size: cover;
+    height: 50%;
+    background-attachment: fixed;
+}
+
+.img_2 {
+    background-image: url("dan-nelson-ah-HeguOe9k-unsplash.jpg");
+    background-size: cover;
+    height: 30%;
+}
+
+.img_3 {
+    background-image: url("adolfo-felix-Yi9-QIObQ1o-unsplash.jpg");
+    background-size: cover;
+}
+
+.login {
+    width: auto;
+    display: table;
+    margin: 20px auto 0;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.loginCheck {
+    width: 350px;
+    display: table;
+    margin: 0 auto auto;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 1em;
+    text-align: right;
+}
+
+.register {
+    width: auto;
+    display: table;
+    margin: 20px auto auto;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#title {
+    font-family: "Meslo LG L DZ", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    display: table;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+.input {
+    display: table;
+    width: 350px;
+    height: 50px;
+    border: dimgray 2px solid;
+    border-radius: 20px;
+    font-size: smaller;
+    text-indent: 20px;
+    margin: 5px auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(peachpuff), to(lightgoldenrodyellow));
+    outline: none;
+    transition: all 1s;
+}
+
+.input:hover {
+    background: transparent;
+    box-shadow: black 2px 2px 5px;
+    transition: all 1s;
+}
+
+.input:focus {
+    width: 410px;
+    transition: all 1s;
+}
+
+::-webkit-input-placeholder {
+    color: #0e0e0e;
+    font-family: "Meslo LG L DZ", serif;
+}
+
+.button {
+    background: linear-gradient(to right, #29eac4, #4284db);
+    display: table;
+    margin: 20px auto 40px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: "Meslo LG L DZ", sans-serif;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: transparent;
+    box-shadow: black 2px 2px 8px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.loginPanel {
+    display: table;
+    margin: 120px auto auto;
+    width: 70%;
+    border: black 2px solid;
+    border-radius: 40px 0 40px 0;
+    background: linear-gradient(to left top, lightgoldenrodyellow, peachpuff, lightpink); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: black 10px 10px 20px;
+}
+
+.changeAndReg {
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.warningPanel {
+    display: table;
+    margin: 120px auto auto;
+    width: 60%;
+    height: 100%;
+    border: black 1px solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: floralwhite 10px 10px 20px;
+}
+
+.warningMessage {
+    font-family: "Meslo LG L DZ", serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: black;
+    display: table;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.warningButton {
+    background: linear-gradient(to right, #29eac4, #4284db);
+    display: table;
+    margin: 20px auto 40px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.warningButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userPanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto auto;
+    width: 30%;
+    border: lightgray 1px solid;
+    background-image: url("transparent.png");
+    background-size: cover;
+    height: 10%;
+    box-shadow: black 5px 5px 10px;
+}
+
+.userTitle {
+    font-family: "Meslo LG L DZ", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    display: table;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.userSubTitle {
+    font-family: "Meslo LG L DZ", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    display: table;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#refresh {
+    background: linear-gradient(to right, #0083b0, #00b4db);
+    display: table;
+    margin: 0 auto 10px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+#refresh:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+}
+
+.mainFrame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    box-shadow: whitesmoke 2px 2px 5px;
+    overflow-y: scroll;
+    background-image: url("katie-moum-9jNcTRncjgM-unsplash.jpg");
+}
+
+.family {
+    display: table;
+    width: 69%;
+    position: fixed;
+    z-index: 999;
+    border: lightgray 1px solid;
+    border-radius: 0 30px 0 30px;
+    background: linear-gradient(to left, #e2e2e2, #c9d6ff);
+    box-shadow: black 5px 5px 10px;
+    font-family: Courier, serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.status {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.column1 {
+    width: 80%;
+}
+
+.column2 {
+    width: 80%;
+}
+
+.device-light {
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to left, #ddefbb, #ffeeee);
+    border: whitesmoke 10px solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: gray 5px 5px 10px;
+    font-family: Calibri, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin: 5%;
+    transition: 1s;
+    overflow: auto;
+}
+
+.device-light:hover {
+    transform: rotate3d(2, -2, -1, 10deg) scale3d(1.2, 1.2, 0.2) translate(30px, 30px);
+    box-shadow: black 3px 3px 10px;
+}
+
+.device-door {
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to right, #d6a4a4, #dae2f8);
+    border: whitesmoke 10px solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: gray 5px 5px 10px;
+    font-family: Calibri, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin: 5%;
+    transition: 1s;
+    overflow: auto;
+}
+
+.device-door:hover {
+    transform: rotate3d(2, -2, -1, 10deg) scale3d(1.2, 1.2, 0.2) translate(30px, 30px);
+    box-shadow: black 3px 3px 10px;
+}
+
+
+.device-window {
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to right, #faffd1, #a1ffce);
+    border: whitesmoke 10px solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: gray 5px 5px 10px;
+    font-family: Calibri, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin: 5%;
+    transition: 1s;
+    overflow: auto;
+}
+
+
+.device-window:hover {
+    transform: rotate3d(2, -2, -1, 10deg) scale3d(1.2, 1.2, 0.2) translate(30px, 30px);
+    box-shadow: black 3px 3px 10px;
+}
+
+.device-alarm {
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to right, #faffd1, #a1ffce);
+    border: whitesmoke 10px solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: gray 5px 5px 10px;
+    font-family: Calibri, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin: 5%;
+    transition: 1s;
+    overflow: auto;
+}
+
+.device-alarm:hover {
+    transform: rotate3d(2, -2, -1, 10deg) scale3d(1.2, 1.2, 0.2) translate(30px, 30px);
+    box-shadow: black 3px 3px 10px;
+}
+
+.device-sound {
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to right, #faffd1, #a1ffce);
+    border: whitesmoke 10px solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: gray 5px 5px 10px;
+    font-family: Calibri, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin: 5%;
+    transition: 1s;
+    overflow: auto;
+}
+
+.device-sound:hover {
+    transform: rotate3d(2, -2, -1, 10deg) scale3d(1.2, 1.2, 0.2) translate(30px, 30px);
+    box-shadow: black 3px 3px 10px;
+}
+
+.icon {
+    width: 40%;
+
+}
+
+.information {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: table;
+}
+
+.modification {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.search {
+    background: linear-gradient(to right, #b0dab9, #dad299);
+    display: table;
+    margin: 0 auto 2px;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
+    background: transparent;
+    text-decoration: none;
+}
+
+.refresh:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modifyInput {
+    height: 30px;
+    color: black;
+    font-size: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: darkgray 2px solid;
+    text-indent: 20px;
+    background-color: transparent;
+    outline: none;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    bottom: 0;
+}
+
+.copyright {
+    width: auto;
+    text-align: center;
+    font-family: Centaur, serif;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.selectType {
+    display: table;
+    font-family: Courier, serif;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px auto auto;
+}
+
+.addText {
+    margin: 20px auto;
+    display: table;
+    text-align: right;
+}
+
+.lefttoright {
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: 5px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.copyright {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    background: white;
+    color: black;
+    margin-bottom: 0;
+}
